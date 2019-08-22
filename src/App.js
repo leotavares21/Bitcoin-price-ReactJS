@@ -1,19 +1,16 @@
-import React, { Component, Fragment } from 'react';
+import React, { Fragment } from 'react';
 import './App.css';
 
 import BitcoinCard from './components/BitcoinCard';
 
 
 
-export default class App extends Component{
+const App = () => (
 
-  render(){
-    return(
       <Fragment>
-        <BitcoinCard />
+             <BitcoinCard/>
       </Fragment>
-    )
-  }
-}
 
+)
 
+export default App;

@@ -1,6 +1,6 @@
 import React from 'react';
 
 
-const BitcoinPrice = () => <h1 className="price"><small className="sifra">R$</small>41697,88</h1>
+const BitcoinPrice = props => <h1><small className="sifra">R$</small><span className="price">{props.sell.substr(0,2) + '.' + props.sell.substr(2, 7)}</span></h1>
 
 export default BitcoinPrice;

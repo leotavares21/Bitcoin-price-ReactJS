@@ -1,6 +1,6 @@
 import React from 'react';
 
-const BitcoinVol = () => <small class="title"><span className="vol">500</span>bitcoins negociados nas ultimas 24hrs</small>
+const BitcoinVol = props => <small className="title"><span className="vol">{props.vol}</span>bitcoins negociados nas ultimas 24hrs</small>
 
 export default BitcoinVol;
 

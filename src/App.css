@@ -8,10 +8,6 @@ body{
     font-size: 16px;
 }
 
-.card-container{
-    width: 100vw;
-}
-
 .card{
     text-align: center;
     background: #304454;
@@ -25,16 +21,18 @@ body{
 .title{
     color: white;
 }
-
+.card > h1{
+    color: #fbd159;
+}
 .sifra{
-    font-size: 0.5em;
     font-weight: lighter;
+    font-size: 0.5em;
     margin-right: 5px;
 }
 
 .price{
-    color: #fbd159;
-    font-size: 2.5em;
+    font-size: 1.3em;
+    display: inline-block;
 }
 
 .vol{
@@ -68,6 +66,16 @@ body{
         width: 0px;
           }
    }
+
+  @keyframes roll{
+    from{
+        transform: rotateX(0deg);
+           }
+    to{
+        transform: rotateX(360deg);
+          }
+   }
+
 
 
 
