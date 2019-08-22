@@ -3,30 +3,45 @@
     margin: 0;
     box-sizing: border-box;
 }
+body{
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    font-size: 16px;
+}
 
 .card-container{
-   width: 100vw;
+    width: 100vw;
 }
 
 .card{
     text-align: center;
     background: #304454;
+    padding: 20px 0;
     border-radius: 5px;
     max-width: 400px;
-    height: 200px;
+    max-height: 200px;
     margin: 10vh auto;
 } 
 
 .title{
-    color: red;
-    z-index: 10;
+    color: white;
 }
 
 .sifra{
-    font-size: 0.7em;
+    font-size: 0.5em;
+    font-weight: lighter;
+    margin-right: 5px;
 }
 
+.price{
+    color: #fbd159;
+    font-size: 2.5em;
+}
 
+.vol{
+    color: #fbd159;
+    margin-right: 5px;
+    font-weight: bold;
+}
 
 .bar{
     margin: 15px auto;
@@ -35,6 +50,24 @@
     background: #263643;
 }
 
+.bar::before{
+    content: '';
+    display: block;
+    background: #57646e;
+    width: 350px;
+    height: 2px;
+    animation: carregar 15s infinite linear;
+  }
+
+
+  @keyframes carregar{
+    from{
+        width: 350px;
+           }
+    to{
+        width: 0px;
+          }
+   }
 
 
 
